@@ -42,6 +42,9 @@ export const AnimatedSquares = ({
       ),
       -1,
     );
+    return () => {
+      xPos.value = 0;
+    };
   }, [xPos, width, size, speed]);
 
   const rectList = useMemo(
