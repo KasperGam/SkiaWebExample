@@ -20,8 +20,7 @@ export default defineConfig({
   define: {
     global: "self",
     "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV),
-    __DEV__: JSON.stringify(false),
-    DEV: JSON.stringify(development),
+    __DEV__: "false",
     ...(base.define ?? {}),
   },
   resolve: {
