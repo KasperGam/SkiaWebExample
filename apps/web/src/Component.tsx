@@ -1,9 +1,8 @@
-("use client");
 import { HelloWorld, AnimatedSquares } from "components";
 import "./Components.css";
 import { useState } from "react";
 
-export default () => {
+const Component = () => {
   const [squares, setSquares] = useState(4);
   return (
     <div className="component-container">
@@ -28,3 +27,5 @@ export default () => {
     </div>
   );
 };
+
+export default Component;
